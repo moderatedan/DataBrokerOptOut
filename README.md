@@ -57,3 +57,4 @@ bash
 
     Follow the instructions on the opened web pages to complete the opt-out process manually.
     
+Buy me a Rip It Energy Drink! Send Monero to: 45WfVFmKFDKCAPGuPtJQG5jEnTvPf8wLk36KeG5AQKngBgmxeB6byHJTYnR4hVwJGxFCmo2wiWbFuivPcWPpknn951tFxcF

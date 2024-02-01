@@ -39,7 +39,7 @@ Installation:
 
     bash
 
-git clone https://github.com/your-username/DataBrokerOptOut.git
+git clone https://github.com/moderatedan/DataBrokerOptOut.git
 
 Navigate to the project directory:
 

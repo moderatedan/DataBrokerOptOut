@@ -1,0 +1,42 @@
+import webbrowser
+
+def print_header():
+    print("*******************************************")
+    print("*            Data Broker Opt Out           *")
+    print("*******************************************")
+
+data_brokers = [
+    "Acxiom",
+    "Equifax",
+    "Oracle",
+    "Epsilon",
+    "TransUnion"
+]
+
+def open_opt_out_page(broker_name):
+    opt_out_urls = {
+        "Acxiom": "https://www.acxiom.com/about-us/privacy/opt-out/",
+        "Equifax": "https://www.equifax.com/personal/credit-report-services/credit-freeze/",
+        "Oracle": "https://www.oracle.com/legal/privacy/privacy-policy.html#optout",
+        "Epsilon": "https://us.epsilon.com/privacy-policy#optout",
+        "TransUnion": "https://www.transunion.com/credit-freeze/place-credit-freeze"
+    }
+
+    url = opt_out_urls.get(broker_name)
+    if url:
+        print(f"\nOpening opt-out page for {broker_name}...")
+        webbrowser.open(url, new=2)  # Open in a new tab/window
+    else:
+        print(f"\nOpt-out information not available for {broker_name}.")
+
+if __name__ == "__main__":
+    print_header()
+    
+    broker_to_remove = "TowerData"
+    if broker_to_remove in data_brokers:
+        data_brokers.remove(broker_to_remove)
+        print(f"Removed {broker_to_remove} from the list.")
+    
+    for broker in data_brokers:
+        open_opt_out_page(broker)
+

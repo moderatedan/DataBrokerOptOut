@@ -1,0 +1,7 @@
+# DataBrokerOptOut deliberately has ZERO third-party dependencies.
+# Everything runs on the Python 3.9+ standard library (tkinter, argparse,
+# json, webbrowser, csv). Nothing to pip install.
+#
+# The GUI needs tkinter, which ships with Python on Windows/macOS.
+# On Debian/Ubuntu:   sudo apt install python3-tk
+# On Fedora:          sudo dnf install python3-tkinter

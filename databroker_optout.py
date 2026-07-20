@@ -348,7 +348,7 @@ def search_url_for(view: BrokerView, profile: dict) -> str:
     """A best-effort 'am I still listed?' search URL on the broker's own site."""
     name = profile.get("full_name", "")
     site = view.broker["optout_url"].split("/")[2] if "//" in view.broker["optout_url"] else ""
-    return f"https://duckduckgo.com/?q={quote(f'site:{site} \"{name}\"')}"
+    return f"https://duckduckgo.com/?q={quote(f'site:{site} {name}')}"
 
 
 def progress_summary(views: list[BrokerView]) -> dict:
